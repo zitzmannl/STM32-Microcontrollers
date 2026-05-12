@@ -43,17 +43,6 @@ The system continuously scans a 4x3 matrix keypad by sequentially driving row pi
 
 ---
 
-## File Structure
-
-```txt
-Keypad-Interface
-│
-├── README.md
-└── keypad_to_sevenseg.c
-```
-
----
-
 ## Skills Demonstrated
 
 - Embedded C programming
