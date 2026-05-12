@@ -41,17 +41,6 @@ The system continuously cycles through onboard LEDs until a button connected to 
 
 ---
 
-## File Structure
-
-```txt
-Interrupts
-│
-├── README.md
-└── external_interrupt_blink.c
-```
-
----
-
 ## Skills Demonstrated
 
 - Embedded C programming
