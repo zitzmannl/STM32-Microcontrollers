@@ -29,30 +29,19 @@ This project demonstrates basic STM32 GPIO output control using direct register 
 
 ---
 
-## File Structure
-
-```txt
-GPIO-Basics
-│
-├── README.md
-└── BlueLED_Bitwise.c
-```
-
----
-
 ## Skills Demonstrated
 
-- Embedded systems programming
-- Hardware/software interfacing
-- Peripheral configuration
-- Low-level debugging
-- Microcontroller development
+- Embedded C programming
+- Register-level microcontroller programming
+- Bitwise register manipulation
+- STM32 peripheral configuration
+- GPIO hardware control
+- Hardware/software debugging
 
 ---
 
-## Future Improvements
+## Engineering Takeaways
 
-- Pushbutton input control
-- Interrupt-based LED toggling
-- Timer-based delays
-- Multiple LED sequencing
+This project introduced direct interaction with STM32 hardware registers and demonstrated how peripheral configuration is performed below the level of higher-level hardware abstraction functions.
+
+Configuring the RCC and GPIO registers directly provided practical experience with bitwise operations, register masking, peripheral clock control, and GPIO configuration in embedded C. The project established the low-level foundation for the more advanced interrupt-driven and peripheral-interface projects in this repository.
