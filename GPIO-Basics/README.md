@@ -10,7 +10,9 @@ This project demonstrates register-level GPIO configuration and output control o
 
 The onboard LEDs were sequenced Green → Blue → Red → Orange using software-controlled timing. The program was then expanded to control an external LED alongside the onboard LEDs, demonstrating GPIO configuration across multiple ports.
 
-![STM32 GPIO LED demonstration](Images/gpio_led_demo.jpg)
+### Project Files
+
+[View source code and hardware demonstration](./Multi_LED_GPIO/)
 
 *STM32 GPIO output demonstration using four onboard LEDs and an externally connected breadboard LED.*
 
