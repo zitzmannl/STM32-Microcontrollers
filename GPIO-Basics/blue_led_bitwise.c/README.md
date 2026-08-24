@@ -1,1 +1,1 @@
-
+This project demonstrates basic STM32 GPIO output control using direct register programming. The onboard blue LED connected to pin PD15 is configured as an output and blinked using a software delay loop.
