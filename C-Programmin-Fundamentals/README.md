@@ -6,17 +6,15 @@ Foundational C programming exercises focused on conditional logic, looping, user
 
 ## Project: Bank Account Management System
 
-This project demonstrates the use of conditional statements and loops through a console-based banking simulation.
+This project demonstrates the use of conditional statements, loops, user input, and state management through a console-based banking simulation.
 
-The program first requires the user to enter a password, allowing a maximum of three attempts before terminating. After successful authentication, the user is presented with a menu that allows them to deposit funds, withdraw funds, check their current balance, calculate yearly interest, or exit the program.
-
----
+The program requires the user to enter a passcode and allows a maximum of three incorrect attempts before terminating. After successful authentication, the user is presented with a menu that allows them to deposit funds, withdraw funds, check their current balance, calculate yearly interest, or exit the program.
 
 ## Concepts Demonstrated
 
 - Conditional statements
-- `if` / `else` logic
-- `do-while` and `while` loops
+- `if` / `else if` logic
+- `do-while` loops
 - User input processing
 - Variable and state management
 - Input validation
@@ -24,14 +22,22 @@ The program first requires the user to enter a password, allowing a maximum of t
 - Floating-point arithmetic
 - Program flow control
 
----
-
 ## Program Features
 
 - Password authentication with a three-attempt limit
-- Menu-driven user interface
+- Menu-driven banking interface
 - Deposit functionality
 - Withdrawal with balance validation
-- Current balance calculation
+- Current balance display
 - 3% yearly interest calculation
 - Continuous operation until user-selected exit
+
+## Source Code
+
+[`bank_account_system.c`](bank_account_system.c)
+
+## Engineering Takeaways
+
+This project provided practice developing structured C programs that respond to user input and maintain changing program states over time.
+
+Implementing authentication, repeated menu interaction, transaction logic, and input validation helped establish the programming fundamentals later applied to STM32 GPIO control, interrupt-driven applications, and hardware interfacing.
