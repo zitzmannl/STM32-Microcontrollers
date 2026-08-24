@@ -1,47 +1,46 @@
 # GPIO Basics
 
-Introduction to STM32 GPIO programming using direct register access and embedded C.
+Introduction to STM32 GPIO programming using direct register access, bitwise operations, and embedded C.
 
 ---
 
-# Project: Blue LED Bitwise Control
+## Project: Multi-LED GPIO & Bitwise Control
 
-This project demonstrates basic STM32 GPIO output control using direct register programming. The onboard blue LED connected to pin PD15 is configured as an output and blinked using a software delay loop.
+This project demonstrates register-level GPIO configuration and output control on an STM32 microcontroller. Four onboard LEDs were programmed to operate individually and sequentially, followed by integration of an external LED through a breadboard circuit.
 
----
+The onboard LEDs were sequenced Green → Blue → Red → Orange using software-controlled timing. The program was then expanded to control an external LED alongside the onboard LEDs, demonstrating GPIO configuration across multiple ports.
+
+![STM32 GPIO LED demonstration](Images/gpio_led_demo.jpg)
+
+*STM32 GPIO output demonstration using four onboard LEDs and an externally connected breadboard LED.*
 
 ## Concepts Demonstrated
 
+- Direct register-level GPIO programming
 - RCC peripheral clock configuration
-- GPIO mode register setup
+- GPIO mode register configuration
 - GPIO output control
 - Bitwise operations
-- Register-level programming
-- Embedded C development
-- STM32 peripheral configuration
-
----
+- Memory-mapped peripheral access
+- Custom C structures for hardware registers
+- Multiple GPIO port configuration
+- Software-based timing
+- Embedded C programming
 
 ## Hardware Used
 
 - STM32 Development Board
-- Onboard Blue LED (PD15)
-
----
+- Four onboard LEDs
+- External LED
+- Breadboard
+- Jumper wires
 
 ## Skills Demonstrated
 
 - Embedded C programming
-- Register-level microcontroller programming
+- Register-level peripheral configuration
+- STM32 reference manual navigation
 - Bitwise register manipulation
-- STM32 peripheral configuration
-- GPIO hardware control
-- Hardware/software debugging
-
----
-
-## Engineering Takeaways
-
-This project introduced direct interaction with STM32 hardware registers and demonstrated how peripheral configuration is performed below the level of higher-level hardware abstraction functions.
-
-Configuring the RCC and GPIO registers directly provided practical experience with bitwise operations, register masking, peripheral clock control, and GPIO configuration in embedded C. The project established the low-level foundation for the more advanced interrupt-driven and peripheral-interface projects in this repository.
+- Hardware/software interfacing
+- GPIO debugging
+  
