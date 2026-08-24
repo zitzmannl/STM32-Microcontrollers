@@ -10,6 +10,12 @@ Four onboard LEDs connected to GPIO pins PD12–PD15 are continuously sequenced 
 
 When the button generates an interrupt, the `HAL_GPIO_EXTI_Callback()` function identifies the active LED and temporarily modifies its behavior in response to the button input.
 
+## Hardware Demonstration
+
+The interrupt-driven LED control program was implemented and tested on physical STM32 hardware. During normal operation, the four onboard LEDs cycle sequentially. The external pushbutton generates a GPIO interrupt, causing the program to respond through the interrupt callback based on the currently active LED.
+
+[View hardware demonstration](./Interrupt_LED_Demo.MOV)
+
 ## Concepts Demonstrated
 
 - GPIO external interrupts
