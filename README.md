@@ -52,7 +52,7 @@ HAL callbacks, and state-dependent program behavior.
 **Key Concepts:** EXTI · Interrupt Handling · Event-Driven Programming ·
 HAL Callbacks · State Tracking
 
-[View source code and hardware demonstration](./External_Interrupt_LED/)
+[View External Interrupt project](./Interrupts/External_Interrupt_LED/)
 
 ---
 
