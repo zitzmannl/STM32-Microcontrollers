@@ -16,6 +16,11 @@ The onboard LEDs were sequenced Green → Blue → Red → Orange using software
 
 *STM32 GPIO output demonstration using four onboard LEDs and an externally connected breadboard LED.*
 
+## Introductory Exercise: Blue LED Bitwise Control
+
+Before developing the multi-LED implementation, I completed a basic GPIO exercise configuring the onboard blue LED (PD15) as an output using direct register programming. This exercise introduced RCC clock configuration, GPIO mode registers, bitwise operations, and software-based timing.
+
+[View Blue LED exercise](./blue_led_bitwise/)
 ## Concepts Demonstrated
 
 - Direct register-level GPIO programming
