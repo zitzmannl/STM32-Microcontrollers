@@ -1,63 +1,45 @@
-# Keypad Interface
+# Keypad & Seven-Segment Interface
 
-STM32 keypad interfacing and seven-segment display control using GPIO scanning and embedded C programming.
+Integrated STM32 peripheral-interface project combining matrix-keypad scanning, seven-segment display control, GPIO input/output, and embedded C logic.
 
----
+## Project Overview
 
-# Project: Keypad to Seven-Segment Display
+This project developed a 4×3 matrix-keypad interface and seven-segment display system using an STM32 microcontroller.
 
-This project demonstrates matrix keypad scanning and seven-segment display control using an STM32 microcontroller.
+The keypad was scanned by driving one row LOW at a time while reading the column inputs through pull-up resistors. Each detected row-column combination was mapped to a corresponding keypad character.
 
-The system continuously scans a 4x3 matrix keypad by sequentially driving row pins and reading column inputs. When a key is pressed, the corresponding numerical value is displayed on a seven-segment display.
+A reusable seven-segment `Display()` function used a binary digit map to control the individual display segments and render numerical values from 0–9.
 
----
+## System Behavior
+
+The project progressed through several stages:
+
+- Seven-segment digit display and 0–9 counting
+- Matrix-keypad scanning and key detection
+- Keypad-controlled LED behavior
+- Keypad-to-seven-segment numerical display
+- Timed LED/display interaction
+- Final integrated timing game using keypad input and sensor/button logic
 
 ## Concepts Demonstrated
 
-- Matrix keypad scanning
-- GPIO row/column interfacing
+- 4×3 matrix-keypad scanning
+- Row/column GPIO interfacing
+- Pull-up input configuration
 - Seven-segment display control
-- Embedded input processing
-- Binary segment mapping
-- Embedded systems logic
-- Hardware/software interfacing
-
----
+- Binary digit mapping
+- GPIO input/output
+- Input debouncing
+- State tracking
+- HAL GPIO functions
+- Hardware/software integration
 
 ## Hardware Used
 
 - STM32 Development Board
-- 4x3 Matrix Keypad
+- 4×3 Matrix Keypad
 - Seven-Segment Display
-- GPIO Input/Output Interfaces
-
----
-
-## Features
-
-- Real-time keypad scanning
-- Numerical key detection
-- Seven-segment numerical display output
-- GPIO-based hardware control
-- Software debouncing using delay timing
-
----
-
-## Skills Demonstrated
-
-- Embedded C programming
-- STM32 HAL development
-- GPIO interfacing
-- Digital logic implementation
-- Hardware debugging
-- Embedded systems design
-
----
-
-## Future Improvements
-
-- Interrupt-based keypad detection
-- Multiplexed multi-digit displays
-- LCD integration
-- Menu-driven embedded interface
-- RTOS task scheduling
+- Onboard LEDs
+- Pushbutton
+- Light sensor
+- Breadboard and jumper wires
