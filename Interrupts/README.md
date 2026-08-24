@@ -14,7 +14,7 @@ When the button generates an interrupt, the `HAL_GPIO_EXTI_Callback()` function 
 
 The interrupt-driven LED control program was implemented and tested on physical STM32 hardware. During normal operation, the four onboard LEDs cycle sequentially. The external pushbutton generates a GPIO interrupt, causing the program to respond through the interrupt callback based on the currently active LED.
 
-[View hardware demonstration](./Interrupt_LED_Demo.mp4)
+[View hardware demonstration](./External_Interrupt_LED.c/Interrupt_LED_Demo.mp4)
 
 ## Concepts Demonstrated
 
