@@ -31,8 +31,7 @@ Matrix Keypad Scanning · Seven-Segment Displays
 Introduction to low-level STM32 peripheral control using direct register
 access and bitwise operations.
 
-The project configures the GPIOD peripheral clock and GPIO registers directly
-to control the onboard LED without relying on high-level GPIO functions.
+The projects configure STM32 GPIO peripherals through direct register access to control multiple onboard LEDs and an external breadboard LED, demonstrating low-level peripheral configuration and bitwise register manipulation.
 
 **Key Concepts:** RCC Configuration · GPIO Registers · Bitwise Operations ·
 Direct Register Access
