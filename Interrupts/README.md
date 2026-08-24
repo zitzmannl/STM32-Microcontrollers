@@ -1,61 +1,40 @@
-# Interrupts
+# External Interrupts
 
-STM32 interrupt-based embedded systems programming projects using external inputs and event-driven logic.
+Introduction to event-driven embedded programming on the STM32 using GPIO external interrupts and the Hardware Abstraction Layer (HAL).
 
----
+## Project: External Interrupt LED Control
 
-# Project: External Interrupt LED Control
+This project demonstrates the use of a GPIO external interrupt to modify an active LED sequence on an STM32 microcontroller.
 
-This project demonstrates interrupt-driven LED control using STM32 external interrupts and GPIO event handling.
+Four onboard LEDs connected to GPIO pins PD12–PD15 are continuously sequenced during normal program execution. The currently active LED is tracked by the program. A pushbutton connected to PB5 is configured as a rising-edge external interrupt through the STM32 EXTI and NVIC systems.
 
-The system continuously cycles through onboard LEDs until a button connected to GPIO pin PB5 triggers an external interrupt. Once the interrupt occurs, the currently active LED begins blinking until the button is released.
-
----
+When the button generates an interrupt, the `HAL_GPIO_EXTI_Callback()` function identifies the active LED and temporarily modifies its behavior in response to the button input.
 
 ## Concepts Demonstrated
 
-- External interrupts (EXTI)
-- GPIO interrupt handling
+- GPIO external interrupts
+- STM32 EXTI configuration
+- NVIC interrupt configuration
+- Rising-edge interrupt triggering
 - HAL interrupt callbacks
-- Event-driven programming
-- GPIO output control
-- Embedded debugging
-- State tracking using variables
-
----
+- GPIO input and output
+- Event-driven embedded programming
+- Program state tracking
 
 ## Hardware Used
 
 - STM32 Development Board
-- Onboard LEDs (PD12–PD15)
-- Pushbutton Input (PB5)
-
----
-
-## Features
-
-- Sequential LED cycling
-- Interrupt-triggered LED blinking
-- Real-time button detection
-- State-dependent LED control
-
----
+- Onboard LEDs
+- External pushbutton
+- Breadboard
+- Jumper wires
 
 ## Skills Demonstrated
 
 - Embedded C programming
-- STM32 HAL development
-- Interrupt service routines
+- STM32 HAL
+- Interrupt configuration
+- Interrupt service handling
+- GPIO peripheral configuration
 - Hardware/software interfacing
-- Event-driven system design
-- Embedded troubleshooting
-
----
-
-## Future Improvements
-
-- Hardware timer interrupts
-- Debouncing implementation
-- Non-blocking delays
-- RTOS integration
-- Multiple interrupt sources
+- Embedded debugging
